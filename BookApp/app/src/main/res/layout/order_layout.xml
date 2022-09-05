@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".OrderActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#669966">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:text="User"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:text="user@gmail.com"
+            android:textColor="@color/white"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="Full Name"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/user_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_email"
+            android:drawablePadding="10dp"
+            android:hint="Address"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_email"
+            android:layout_toRightOf="@+id/address"
+            android:drawablePadding="10dp"
+            android:hint="Number"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/zip"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/address"
+
+            android:drawablePadding="10dp"
+            android:hint="Z.C."
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/zip"
+
+            android:drawablePadding="10dp"
+            android:hint="Phone number"
+            android:textColor="@color/black" />
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="168dp"
+            android:layout_height="83dp"
+            android:layout_below="@+id/phone"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/card" />
+
+        <EditText
+            android:id="@+id/card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/image"
+            android:layout_marginTop="44dp"
+            android:drawablePadding="10dp"
+            android:hint="Card Code"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/date"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card"
+            android:layout_marginTop="7dp"
+            android:drawablePadding="10dp"
+
+            android:hint="Date"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/cvv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/card"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@+id/date"
+            android:drawablePadding="10dp"
+            android:hint="CVV"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/totalCost"
+
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+
+
+            android:layout_below="@+id/phone"
+            android:layout_marginLeft="68dp"
+            android:layout_marginTop="34dp"
+            android:layout_toRightOf="@+id/image"
+            android:text="0.00"
+            android:textSize="20dp"
+            android:textColor="@color/black"/>
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/complete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:layout_marginEnd="10dp"
+
+
+            android:text="Complete Order" />
+    </LinearLayout>
+
+
+</RelativeLayout>

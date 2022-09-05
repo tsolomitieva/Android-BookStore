@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".UserActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="35dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <RelativeLayout
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="#669966"
+            tools:ignore="MissingConstraints">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="User"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title"
+                android:layout_centerHorizontal="true"
+                android:text="user@gmail.com"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="63dp"
+                android:layout_toRightOf="@id/email"
+                android:background="@color/common_google_signin_btn_text_dark_disabled"
+                android:text="Logout"
+                android:textSize="10dp" />
+
+
+            <ImageView
+                android:id="@+id/cart"
+                android:layout_width="66dp"
+                android:layout_height="70dp"
+                android:background="@drawable/cart"
+                android:text="cart"
+                android:textSize="5dp"
+                tools:ignore="MissingConstraints" />
+
+
+        </RelativeLayout>
+
+
+        <SearchView
+            android:id="@+id/search"
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="57dp"
+            android:iconifiedByDefault="false"
+            android:queryHint="Search Here">
+
+
+        </SearchView>
+
+        <ImageView
+            android:id="@+id/voice"
+            android:layout_width="wrap_content"
+            android:layout_height="43dp"
+            android:layout_below="@+id/toolbar"
+
+            android:layout_marginLeft="-59dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/toolbar"
+            android:background="@drawable/voice"
+            android:text="Voice"
+            android:textSize="10dp"
+            tools:layout_editor_absoluteX="294dp"
+            tools:layout_editor_absoluteY="57dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/booklist"
+            android:layout_width="match_parent"
+            android:layout_height="624dp"
+            android:layout_below="@+id/search"
+            android:layout_marginTop="2dp"
+
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="103dp" />
+
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

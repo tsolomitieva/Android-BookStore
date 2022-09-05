@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="100dp"
+            android:layout_height="140dp"
+            android:background="@color/black"
+            android:layout_marginTop="5dp"
+            app:elevation="0dp"
+            app:cardCornerRadius="5dp"
+            app:contentPadding="5dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.MaterialComponents.Headline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/image"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Book Title "
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/image"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="Book Price"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/capacity"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/image"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="capacity" />
+        <TextView
+            android:id="@+id/quantity"
+            style="@style/TextAppearance.MaterialComponents.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/capacity"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toEndOf="@id/image"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="quantity" />
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

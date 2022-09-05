@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".AdminActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="#669966">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_centerHorizontal="true"
+            android:textStyle="bold"
+            android:text="Dashboar Admin"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:text="admin@gmail.com"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="63dp"
+            android:layout_toRightOf="@id/email"
+            android:background="@color/common_google_signin_btn_text_dark_disabled"
+            android:text="Logout"
+            android:textSize="10dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp">
+        <EditText
+            android:id="@+id/bookId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:hint="ID"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/bookTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookId"
+            android:drawablePadding="10dp"
+            android:hint="Title"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/bookDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookTitle"
+            android:drawablePadding="10dp"
+            android:hint="Details"
+            android:textColor="@color/black" />
+
+
+        <EditText
+            android:id="@+id/bookImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookDetails"
+            android:layout_marginTop="7dp"
+            android:drawablePadding="10dp"
+            android:hint="Image"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/bookPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookImage"
+            android:layout_marginTop="2dp"
+            android:drawablePadding="10dp"
+            android:hint="Price"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/bookAvailability"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bookPrice"
+            android:layout_marginTop="6dp"
+            android:drawablePadding="10dp"
+            android:hint="Availability"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp">
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="50dp"
+            android:layout_marginEnd="10dp"
+
+
+            android:text="+ Add Book" />
+    </LinearLayout>
+
+
+</RelativeLayout>
